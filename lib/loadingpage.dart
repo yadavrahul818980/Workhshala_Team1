@@ -19,7 +19,7 @@ class _loadingPageState extends State<loadingPage> {
       // body: Padding(
       body:
           // padding: const EdgeInsets.fromLTRB(30, 0, 30, 0),
-           bottomDrawer(),
+          bottomDrawer(),
 
       // )  ,
       // drawer: Drawer,
@@ -42,10 +42,10 @@ class bottomDrawer extends StatelessWidget {
               context: context,
 
               // isScrollControlled: true,
-  // isDismissible: true,
-  shape: const RoundedRectangleBorder(
-      borderRadius:
-          BorderRadius.vertical(top: Radius.circular(40))),
+              // isDismissible: true,
+              shape: const RoundedRectangleBorder(
+                  borderRadius:
+                      BorderRadius.vertical(top: Radius.circular(40))),
               builder: (BuildContext context) {
                 return Container(
                   decoration: BoxDecoration(
@@ -61,7 +61,7 @@ class bottomDrawer extends StatelessWidget {
                       // const Text('drawer closing button'),
                       // MainAxisAlignment
                       Container(
-                        padding:const EdgeInsets.fromLTRB(0, 5, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(0, 5, 0, 0),
                         height: 20,
                         // width: ,
                         child: Row(
@@ -69,13 +69,9 @@ class bottomDrawer extends StatelessWidget {
                           // crossAxisAlignment: CrossAxisAlignment.center,
                           // mainAxisSize: MainAxisSize.min,
                           children: [
-                            
                             ElevatedButton(
-                              
-                              
                               onPressed: () => Navigator.pop(context),
                               child: const Text(''),
-                              
                               style: const ButtonStyle(
                                 backgroundColor:
                                     MaterialStatePropertyAll<Color>(
@@ -92,7 +88,7 @@ class bottomDrawer extends StatelessWidget {
                         ),
                         // child:Row()
                       ),
-                     const  SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Container(
@@ -102,7 +98,13 @@ class bottomDrawer extends StatelessWidget {
                           const SizedBox(
                             width: 20,
                           ),
-                          returnButton(const Color.fromARGB(34, 104, 104, 104) ,                          28.0, 28.0, context, const loadingPage()),
+                          returnButton(
+                              'assets/vectorback.png',
+                              const Color.fromARGB(34, 104, 104, 104),
+                              28.0,
+                              28.0,
+                              context,
+                              const loadingPage()),
                           const SizedBox(
                             width: 20,
                           ),
@@ -121,7 +123,13 @@ class bottomDrawer extends StatelessWidget {
                           child: Row(
                             children: const [
                               Text(
-                                  'Choose 3-5 catogries and we`ll optimize \nthe vacancies for you.',style: TextStyle(fontWeight: FontWeight.w500,fontSize: 19,fontStyle: FontStyle.normal,color: Colors.black),)
+                                'Choose 3-5 catogries and we`ll optimize \nthe vacancies for you.',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 19,
+                                    fontStyle: FontStyle.normal,
+                                    color: Colors.black),
+                              )
                             ],
                           ),
                         ),
@@ -130,74 +138,90 @@ class bottomDrawer extends StatelessWidget {
                         height: 20,
                       ),
                       Container(
-                        child : Padding(padding:const  EdgeInsets.fromLTRB(15, 0, 15, 0),
-                          child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          const SizedBox(
-                            width: 20,
-                          ),
-                          optionBox(118.0, 134.0,'Crypto'),
-                          const SizedBox(
-                            width: 20,
-                          ),
-                          optionBox(118.0, 134.0,'Banking'),
-                        ],
-                      ))),
+                          child: Padding(
+                              padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  const SizedBox(
+                                    width: 20,
+                                  ),
+                                  optionBox1('assets/crypto.png', 118.0, 134.0,
+                                      'Crypto'),
+                                  const SizedBox(
+                                    width: 20,
+                                  ),
+                                  optionBox('assets/banking.png', 118.0, 134.0,
+                                      'Banking'),
+                                ],
+                              ))),
                       const SizedBox(
                         height: 20,
                       ),
                       Container(
-                        child : Padding(padding:const  EdgeInsets.fromLTRB(15, 0, 15, 0),
-                          child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          const SizedBox(
-                            width: 20,
-                          ),
-                          optionBox(118.0, 134.0,'Programming'),
-                          const SizedBox(
-                            width: 20,
-                          ),
-                          optionBox(118.0, 134.0,'Food & restaurent'),
-                        ],
-                      ))),
+                          child: Padding(
+                              padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  const SizedBox(
+                                    width: 20,
+                                  ),
+                                  optionBox('assets/programming.png', 118.0,
+                                      134.0, 'Programming'),
+                                  const SizedBox(
+                                    width: 20,
+                                  ),
+                                  optionBox('assets/food&restaurent.png', 118.0,
+                                      134.0, 'Food & restaurent'),
+                                ],
+                              ))),
                       const SizedBox(
                         height: 20,
                       ),
                       Container(
-                        child : Padding(padding:const  EdgeInsets.fromLTRB(15, 0, 15, 0),
-                          child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          const SizedBox(
-                            width: 20,
-                          ),
-                          optionBox(118.0, 134.0,'Human Reasorce'),
-                          const SizedBox(
-                            width: 20,
-                          ),
-                          optionBox(118.0, 134.0,'Conten writting'),
-                        ],
-                      ))),
+                          child: Padding(
+                              padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  const SizedBox(
+                                    width: 20,
+                                  ),
+                                  optionBox('assets/humanResources.png', 118.0,
+                                      134.0, 'Human Reasorce'),
+                                  const SizedBox(
+                                    width: 20,
+                                  ),
+                                  optionBox('assets/contentWritting.png', 118.0,
+                                      134.0, 'Conten writting'),
+                                ],
+                              ))),
                       const SizedBox(
                         height: 20,
                       ),
                       Container(
-                        child : Padding(padding:const EdgeInsets.fromLTRB(15, 0, 15, 0),
-                          child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          const SizedBox(
-                            width: 20,
-                          ),
-                          optionBox(118.0, 134.0,'Art & Design'),
-                          const SizedBox(
-                            width: 20,
-                          ),
-                          optionBox(118.0, 134.0,'Customer Service'),
-                        ],
-                      ))),
+                          child: Padding(
+                              padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  const SizedBox(
+                                    width: 20,
+                                  ),
+                                  optionBox('assets/artanddesign.png', 118.0,
+                                      134.0, 'Art & Design'),
+                                  const SizedBox(
+                                    width: 20,
+                                  ),
+                                  optionBox('assets/coustmerservices.png',
+                                      118.0, 134.0, 'Customer Service'),
+                                ],
+                              ))),
                     ],
                   ),
                 );

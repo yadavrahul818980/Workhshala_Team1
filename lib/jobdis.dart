@@ -33,10 +33,15 @@ class jobDisDetail extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           const SizedBox(
-            width: 20,
+            width: 16,
           ),
-          returnButton(const Color.fromARGB(34, 104, 104, 104), 28.0, 28.0,
-              context, const jobDisPage()),
+          returnButton(
+              'assets/vectornormal.png',
+              const Color.fromARGB(34, 104, 104, 104),
+              28.0,
+              28.0,
+              context,
+              const jobDisPage()),
           const SizedBox(
             width: 20,
           ),
@@ -48,8 +53,13 @@ class jobDisDetail extends StatelessWidget {
                 color: Color.fromARGB(255, 0, 0, 0)),
           ),
           const SizedBox(width: 180),
-          returnButton(const Color.fromARGB(34, 104, 104, 104), 28.0, 28.0,
-              context, const jobDisPage()),
+          returnButton1(
+              'assets/share.png',
+              const Color.fromARGB(34, 104, 104, 104),
+              28.0,
+              28.0,
+              context,
+              const jobDisPage()),
         ],
       )),
       Container(
@@ -59,9 +69,10 @@ class jobDisDetail extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   const SizedBox(
-                    width: 20,
+                    width: 16,
                   ),
-                  showBox(118.0, 134.0, 'Interaction Designer', 'Dribbble'),
+                  showBox('assets/details.png', 118.0, 134.0,
+                      'Interaction Designer', 'Dribbble'),
                   textBox(30.0, 350.0, 250.0, 'Salary', '-'),
                   textBox(30.0, 350.0, 220.0, 'Type', 'Part-Time'),
                   textBox(30.0, 350.0, 220.0, 'Location', 'WFH'),
@@ -73,15 +84,32 @@ class jobDisDetail extends StatelessWidget {
                         color: const Color.fromARGB(151, 12, 12, 12),
                         width: 1,
                       )),
-                      child:Padding(padding:const  EdgeInsets.fromLTRB(12, 10, 13, 0) ,
-                      child:Row(children:const [
-                         Text(
-                          "About AllTrails\n\nAllTrails is the most trusted and used outdoors platform \nin the world We help people explore the outdoors with\nhand-curated trail maps along with photos, reviews, and \nuser recordings crowdsourced from our community of\n millions of registered hikers, mountain bikers and trail \nrunners in 150 countries. AllTrails is frequently ranked as \na top-5 Health and Fitness app and has \nbeendownloaded by over 40 million people worldwide\n",
-                          style: const TextStyle(
-                              fontSize: 14, fontWeight: FontWeight.w600),
-                        ),
-                      ]))
-              )],
+                      child: Padding(
+                          padding: const EdgeInsets.fromLTRB(12, 10, 13, 0),
+                          child: Column(children: const [
+                            SizedBox(
+                              height: 9,
+                            ),
+                            Text(
+                              "About Dribble                                                     ",
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.w800),
+                            ),
+                            SizedBox(
+                              height: 7,
+                            ),
+                            Text(
+                              "About All Trails\n\nAllTrails is the most trusted and used outdoors platform\nin the world. \nWe help people explore the outdoors with hand-curated\ntrail maps along with photos, reviews, and user \nrecordings crowdsourced from our community of \nmillions of registered hikers, mountain bikers and trail \nrunners in 150 countries. AllTrails is frequently ranked\nas a top-5 Health and Fitness app and has been\ndownloaded by over 40 million people worldwide.\n",
+                              style: TextStyle(
+                                  fontSize: 14, fontWeight: FontWeight.w500),
+                            ),
+                            Text(
+                              "If you like leaning into qualitative and quantitative data to inform your design decisions then this could be the perfect opportunity for you. Come join our mission to help people spend more time outside having healthy, authentic experiences and a deeper appreciation of the outdoors!\n",
+                              style: TextStyle(
+                                  fontSize: 14, fontWeight: FontWeight.w500),
+                            ),
+                          ])))
+                ],
               ))),
     ]));
   }

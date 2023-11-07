@@ -7,6 +7,7 @@ import 'package:intershipapp/screen/Register.dart';
 // import 'package:tic_tac_toe1/homePage.dart';
 import 'package:workshala/loadingpage.dart';
 import 'package:workshala/jobdis.dart';
+
 void main() {
   runApp(const MyApp());
 }
