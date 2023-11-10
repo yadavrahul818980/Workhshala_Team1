@@ -60,15 +60,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/artanddesign.png
-    - assets/banking.png
-    - assets/contentWritting.png
-    - assets/coustmerservices.png
-    - assets/crypto.png
     - assets/details.png
-    - assets/food&restaurent.png
-    - assets/humanResources.png
-    - assets/programming.png
     - assets/vectornormal.png
     - assets/vectorback.png
     - assets/gmail.png
@@ -77,6 +69,15 @@ flutter:
     - assets/share.png
     - assets/telegram.png
     - assets/twitter.png
+    - assets/programming2.png
+    - assets/human.png
+    - assets/food.png
+    - assets/custom.png
+    - assets/crypto (1).png
+    - assets/content.png
+    - assets/bank.png
+    - assets/art.png
+    - assets/return.png
    
 
 

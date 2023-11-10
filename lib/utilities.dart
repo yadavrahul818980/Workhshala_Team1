@@ -14,11 +14,11 @@ Widget returnButton(image, color, height, width, context, page) {
       //     // blurRadius: 15.0,
       //     offset: Offset(0, 30),
       //   ),
-      // ],
       // color: color,
       // borderRadius: BorderRadius.circular(20),
       // ),
 
+      // ],
       height: height,
       width: width,
       // child: Center(child: Text(text,style: const TextStyle(
@@ -28,12 +28,48 @@ Widget returnButton(image, color, height, width, context, page) {
       //   color: Colors.black,
       child: Image.asset(
         image,
-        scale: 0.5,
+        scale: 0.9,
       ),
 
       // ),)),
     ),
   );
+}
+
+Widget nextButtonBox(text, height, width, context, page) {
+  return GestureDetector(
+      onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => page));
+      },
+      child: Container(
+          decoration:
+              BoxDecoration(borderRadius: BorderRadius.circular(5), boxShadow: [
+            BoxShadow(
+              color: Colors.purple.shade800,
+              blurRadius: 15.0,
+              offset: Offset(0, 30),
+            ),
+            //  color: color,
+            // borderRadius: BorderRadius.circular(20),
+          ]),
+          height: height,
+          width: width,
+          child: Center(
+              child: Text(
+            text,
+            style: const TextStyle(
+              fontWeight: FontWeight.w900,
+              fontSize: 22,
+
+              color: Color.fromARGB(255, 139, 35, 35),
+              // child: Image.asset(
+              //   image,
+              //   scale: 0.9,
+              // ),
+
+              // ),)),
+            ),
+          ))));
 }
 
 Widget returnButton1(image, color, height, width, context, page) {
@@ -190,12 +226,12 @@ Widget optionBox(image, height, width, text) {
     child: Container(
       height: height,
       width: width,
-      // decoration: BoxDecoration(
-      //     // borderRadius: BorderRadius.circular(20),
-      //     border: Border.all(
-      //   color: Colors.black,
-      //   width: 2,
-      // )),
+      decoration: BoxDecoration(
+          // borderRadius: BorderRadius.circular(20),
+          border: Border.all(
+        color: Colors.black,
+        width: 2,
+      )),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -203,13 +239,13 @@ Widget optionBox(image, height, width, text) {
             image,
             scale: 1.1,
           ),
-          // Padding(
-          //   padding: const EdgeInsets.fromLTRB(5, 0, 0, 0),
-          //   child: Text(
-          //     text,
-          //     style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
-          //   ),
-          // ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(5, 3, 0, 0),
+            child: Text(
+              text,
+              style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
+            ),
+          ),
         ],
       ),
     ),

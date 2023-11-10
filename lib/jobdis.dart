@@ -83,7 +83,8 @@ class jobDisDetail extends StatelessWidget {
                           border: Border.all(
                         color: const Color.fromARGB(151, 12, 12, 12),
                         width: 1,
-                      )),
+                      ))),
+                      Container(
                       child: Padding(
                           padding: const EdgeInsets.fromLTRB(12, 10, 13, 0),
                           child: Column(children: const [
