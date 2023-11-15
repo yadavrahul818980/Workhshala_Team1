@@ -39,6 +39,7 @@ class bottomDrawer extends StatelessWidget {
         height: 25,
       ),
       Container(
+        
         //   child: ElevatedButton(
         // child: const Text('show Drawer'),
         // onPressed: () {
@@ -219,6 +220,9 @@ class bottomDrawer extends StatelessWidget {
           ],
         ),
       ),
+      const SizedBox(
+        height: 7,
+      ),
       Container(
           child: Padding(
               padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
@@ -228,11 +232,11 @@ class bottomDrawer extends StatelessWidget {
                   const SizedBox(
                     width: 13,
                   ),
-                  nextButtonBox('Skip', 171.0, 50.0, context, loadingPage()),
-                  // const SizedBox(
-                  //   width: 20,
-                  // ),
-                  nextButtonBox('Next', 171.0, 50.0, context, jobDisPage()),
+                  nextButtonBox('Skip', 141.0, 45.0, context, loadingPage()),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  nextButtonBox('Next', 141.0, 45.0, context, jobDisPage()),
                 ],
               )))
     ]));
